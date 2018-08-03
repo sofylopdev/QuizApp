@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.harrypotterquizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/Question1"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="What's the name wizards call non-wizards?" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Answer1"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/Question2"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="What's the wizards favourite sport?" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Answer2"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/Question3"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Does Harry have a scar shaped like a moon?" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/Answer3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="56dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Answer3a"
+                style="@style/ButtonsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/Answer3b"
+                style="@style/ButtonsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="No" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/Question4"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="What's the name of Harry's owl?" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Answer4"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/Question5"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:text="Who are Harry's best friends?" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/Answer5a"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fred" />
+
+                <CheckBox
+                    android:id="@+id/Answer5b"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ron" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/Answer5c"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hermione" />
+
+                <CheckBox
+                    android:id="@+id/Answer5d"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Padma" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/Question6"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:text="The Weasleys have how many children?" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/Answer6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="56dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Answer6a"
+                    style="@style/ButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="5" />
+
+                <RadioButton
+                    android:id="@+id/Answer6b"
+                    style="@style/ButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="6" />
+
+                <RadioButton
+                    android:id="@+id/Answer6c"
+                    style="@style/ButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="7" />
+
+                <RadioButton
+                    android:id="@+id/Answer6d"
+                    style="@style/ButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="8" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/Question7"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="What's the name of Harry's school?" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Answer7"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/Question8"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Which of the following are Harry's teachers?" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/Answer8a"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P. Dumbledore" />
+
+                <CheckBox
+                    android:id="@+id/Answer8b"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P. Mcgonagall" />
+
+                <CheckBox
+                    android:id="@+id/Answer8c"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P. Flikwick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/Answer8d"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P. Longbottom" />
+
+                <CheckBox
+                    android:id="@+id/Answer8e"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P. Snape" />
+
+                <CheckBox
+                    android:id="@+id/Answer8f"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P. Malfoy" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/Question9"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select the characteristic that most applies to each team:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="56dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Griffindor"
+                    style="@style/ButtonsStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="Griffindor" />
+
+                <Spinner
+                    android:id="@+id/Answer9a"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Slytherin"
+                    style="@style/ButtonsStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:text="Slytherin" />
+
+                <Spinner
+                    android:id="@+id/Answer9b"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Hufflepuff"
+                    style="@style/ButtonsStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:text="Hufflepuff" />
+
+                <Spinner
+                    android:id="@+id/Answer9c"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Ravenclaw"
+                    style="@style/ButtonsStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:text="Ravenclaw" />
+
+                <Spinner
+                    android:id="@+id/Answer9d"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumbersStyle"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/Question10"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Write the name of the naughty ghost:" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Answer10"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/Submit"
+            style="@style/ButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="submitAnswers"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

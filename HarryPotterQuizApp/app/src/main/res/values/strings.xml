@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Harry Potter Quiz App</string>
+
+    <string-array name="characteristics_array">
+        <item>Intelligence</item>
+        <item>Resourcefulness</item>
+        <item>Kindness</item>
+        <item>Bravery</item>
+
+    </string-array>
+</resources>
